@@ -1,0 +1,31 @@
+[0.007s] Invoking command in '/home/ww/Documents/detector/build/img_cat': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/ww/Documents/detector/src/img_cat -DCMAKE_INSTALL_PREFIX=/home/ww/Documents/detector/install/img_cat
+[0.015s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.026s] -- Using PYTHON_EXECUTABLE: /home/ww/anaconda3/bin/python3
+[0.124s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.142s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.144s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.207s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.235s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.236s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.317s] -- Found cv_bridge: 3.0.7 (/opt/ros/foxy/share/cv_bridge/cmake)
+[0.407s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.420s] Traceback (most recent call last):
+[0.420s]   File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 21, in <module>
+[0.420s]     from catkin_pkg.package import parse_package_string
+[0.420s] ModuleNotFoundError: No module named 'catkin_pkg'
+[0.422s] CMake Error at /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:94 (message):
+[0.423s]   execute_process(/home/ww/anaconda3/bin/python3
+[0.423s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[0.423s]   /home/ww/Documents/detector/src/img_cat/package.xml
+[0.423s]   /home/ww/Documents/detector/build/img_cat/ament_cmake_core/package.cmake)
+[0.423s]   returned error code 1
+[0.423s] Call Stack (most recent call first):
+[0.423s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[0.423s]   /opt/ros/foxy/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[0.423s]   CMakeLists.txt:31 (ament_lint_auto_find_test_dependencies)
+[0.423s] 
+[0.423s] 
+[0.424s] -- Configuring incomplete, errors occurred!
+[0.424s] See also "/home/ww/Documents/detector/build/img_cat/CMakeFiles/CMakeOutput.log".
+[0.424s] See also "/home/ww/Documents/detector/build/img_cat/CMakeFiles/CMakeError.log".
+[0.429s] Invoked command in '/home/ww/Documents/detector/build/img_cat' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/ww/Documents/detector/src/img_cat -DCMAKE_INSTALL_PREFIX=/home/ww/Documents/detector/install/img_cat

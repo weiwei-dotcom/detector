@@ -1,0 +1,15 @@
+/home/ww/Documents/detector/install/img_cat/share/ament_index/resource_index/package_run_dependencies/img_cat
+/home/ww/Documents/detector/install/img_cat/share/ament_index/resource_index/parent_prefix_path/img_cat
+/home/ww/Documents/detector/install/img_cat/share/img_cat/environment/ament_prefix_path.sh
+/home/ww/Documents/detector/install/img_cat/share/img_cat/environment/ament_prefix_path.dsv
+/home/ww/Documents/detector/install/img_cat/share/img_cat/environment/path.sh
+/home/ww/Documents/detector/install/img_cat/share/img_cat/environment/path.dsv
+/home/ww/Documents/detector/install/img_cat/share/img_cat/local_setup.bash
+/home/ww/Documents/detector/install/img_cat/share/img_cat/local_setup.sh
+/home/ww/Documents/detector/install/img_cat/share/img_cat/local_setup.zsh
+/home/ww/Documents/detector/install/img_cat/share/img_cat/local_setup.dsv
+/home/ww/Documents/detector/install/img_cat/share/img_cat/package.dsv
+/home/ww/Documents/detector/install/img_cat/share/ament_index/resource_index/packages/img_cat
+/home/ww/Documents/detector/install/img_cat/share/img_cat/cmake/img_catConfig.cmake
+/home/ww/Documents/detector/install/img_cat/share/img_cat/cmake/img_catConfig-version.cmake
+/home/ww/Documents/detector/install/img_cat/share/img_cat/package.xml

@@ -1,0 +1,9 @@
+/home/ww/Documents/detector/build/img_cat/CMakeFiles/install/strip.dir
+/home/ww/Documents/detector/build/img_cat/CMakeFiles/install/local.dir
+/home/ww/Documents/detector/build/img_cat/CMakeFiles/install.dir
+/home/ww/Documents/detector/build/img_cat/CMakeFiles/list_install_components.dir
+/home/ww/Documents/detector/build/img_cat/CMakeFiles/rebuild_cache.dir
+/home/ww/Documents/detector/build/img_cat/CMakeFiles/edit_cache.dir
+/home/ww/Documents/detector/build/img_cat/CMakeFiles/test.dir
+/home/ww/Documents/detector/build/img_cat/CMakeFiles/img_cat_uninstall.dir
+/home/ww/Documents/detector/build/img_cat/CMakeFiles/uninstall.dir
