@@ -1,5 +1,8 @@
 
-device_port: /dev/video0
 undistort: false
-camera_config_path: /home/ww/Documents/detector/src/camera_node/config/camera_config.yaml
-pub_time_interval: 30
+device_port: /dev/video0
+camera_config_path: /home/ww/Documents/detector/src/camera_node/config/camera_params.yaml
+pub_time_interval: 25
+frame_width: 640
+frame_height: 480
+camera_fps: 40

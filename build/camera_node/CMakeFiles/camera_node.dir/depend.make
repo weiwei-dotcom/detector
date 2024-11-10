@@ -323,8 +323,14 @@ CMakeFiles/camera_node.dir/src/camera_node.cpp.o: /opt/ros/foxy/include/statisti
 CMakeFiles/camera_node.dir/src/camera_node.cpp.o: /opt/ros/foxy/include/statistics_msgs/msg/detail/statistic_data_point__struct.hpp
 CMakeFiles/camera_node.dir/src/camera_node.cpp.o: /opt/ros/foxy/include/statistics_msgs/msg/metrics_message.hpp
 CMakeFiles/camera_node.dir/src/camera_node.cpp.o: /opt/ros/foxy/include/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+CMakeFiles/camera_node.dir/src/camera_node.cpp.o: /opt/ros/foxy/include/std_msgs/msg/bool.hpp
+CMakeFiles/camera_node.dir/src/camera_node.cpp.o: /opt/ros/foxy/include/std_msgs/msg/detail/bool__builder.hpp
+CMakeFiles/camera_node.dir/src/camera_node.cpp.o: /opt/ros/foxy/include/std_msgs/msg/detail/bool__struct.hpp
+CMakeFiles/camera_node.dir/src/camera_node.cpp.o: /opt/ros/foxy/include/std_msgs/msg/detail/bool__traits.hpp
+CMakeFiles/camera_node.dir/src/camera_node.cpp.o: /opt/ros/foxy/include/std_msgs/msg/detail/bool__type_support.hpp
 CMakeFiles/camera_node.dir/src/camera_node.cpp.o: /opt/ros/foxy/include/std_msgs/msg/detail/header__struct.hpp
 CMakeFiles/camera_node.dir/src/camera_node.cpp.o: /opt/ros/foxy/include/std_msgs/msg/detail/header__traits.hpp
+CMakeFiles/camera_node.dir/src/camera_node.cpp.o: /opt/ros/foxy/include/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
 CMakeFiles/camera_node.dir/src/camera_node.cpp.o: /opt/ros/foxy/include/tracetools/config.h
 CMakeFiles/camera_node.dir/src/camera_node.cpp.o: /opt/ros/foxy/include/tracetools/tracetools.h
 CMakeFiles/camera_node.dir/src/camera_node.cpp.o: /opt/ros/foxy/include/tracetools/utils.hpp

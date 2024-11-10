@@ -1,0 +1,17 @@
+[01m[K/home/ww/Documents/detector/src/camera_node/src/camera_node.cpp:[m[K In constructor ‘[01m[KCameraNode::CameraNode()[m[K’:
+[01m[K/home/ww/Documents/detector/src/camera_node/src/camera_node.cpp:12:38:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KCameraNode::Config::Config()[m[K’
+   12 |     CameraNode() : Node("camera_node"[01;31m[K)[m[K
+      |                                      [01;31m[K^[m[K
+[01m[K/home/ww/Documents/detector/src/camera_node/src/camera_node.cpp:53:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KCameraNode::Config::Config(const bool&, const string&, const string&, const int&, const int&, const int&, const int&)[m[K’
+   53 |         [01;36m[KConfig[m[K(const bool &undistort,
+      |         [01;36m[K^~~~~~[m[K
+[01m[K/home/ww/Documents/detector/src/camera_node/src/camera_node.cpp:53:9:[m[K [01;36m[Knote: [m[K  candidate expects 7 arguments, 0 provided
+[01m[K/home/ww/Documents/detector/src/camera_node/src/camera_node.cpp:44:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KCameraNode::Config::Config(const CameraNode::Config&)[m[K’
+   44 |     struct [01;36m[KConfig[m[K
+      |            [01;36m[K^~~~~~[m[K
+[01m[K/home/ww/Documents/detector/src/camera_node/src/camera_node.cpp:44:12:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/ww/Documents/detector/src/camera_node/src/camera_node.cpp:44:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KCameraNode::Config::Config(CameraNode::Config&&)[m[K’
+[01m[K/home/ww/Documents/detector/src/camera_node/src/camera_node.cpp:44:12:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+make[2]: *** [CMakeFiles/camera_node.dir/build.make:63: CMakeFiles/camera_node.dir/src/camera_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/camera_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

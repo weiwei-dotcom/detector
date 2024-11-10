@@ -1,0 +1,26 @@
+[0.323s] Invoking command in '/home/ww/Documents/detector/src/yolo_detector': CONDA_PROMPT_MODIFIER=(yolov10) PYTHONPATH=/home/ww/Documents/detector/build/yolo_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ww/Documents/detector/install/yolo_detector/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/yolo_detector build --build-base /home/ww/Documents/detector/build/yolo_detector/build install --record /home/ww/Documents/detector/build/yolo_detector/install.log --install-scripts $base/lib/yolo_detector --single-version-externally-managed install_data
+[0.426s] running egg_info
+[0.427s] writing ../../build/yolo_detector/yolo_detector.egg-info/PKG-INFO
+[0.427s] writing dependency_links to ../../build/yolo_detector/yolo_detector.egg-info/dependency_links.txt
+[0.427s] writing entry points to ../../build/yolo_detector/yolo_detector.egg-info/entry_points.txt
+[0.427s] writing requirements to ../../build/yolo_detector/yolo_detector.egg-info/requires.txt
+[0.427s] writing top-level names to ../../build/yolo_detector/yolo_detector.egg-info/top_level.txt
+[0.446s] reading manifest file '../../build/yolo_detector/yolo_detector.egg-info/SOURCES.txt'
+[0.446s] writing manifest file '../../build/yolo_detector/yolo_detector.egg-info/SOURCES.txt'
+[0.446s] running build
+[0.446s] running build_py
+[0.446s] copying yolo_detector/__init__.py -> /home/ww/Documents/detector/build/yolo_detector/build/lib/yolo_detector
+[0.446s] copying yolo_detector/yolo_detector.py -> /home/ww/Documents/detector/build/yolo_detector/build/lib/yolo_detector
+[0.446s] running install
+[0.447s] running install_lib
+[0.447s] copying /home/ww/Documents/detector/build/yolo_detector/build/lib/yolo_detector/__init__.py -> /home/ww/Documents/detector/install/yolo_detector/lib/python3.8/site-packages/yolo_detector
+[0.447s] copying /home/ww/Documents/detector/build/yolo_detector/build/lib/yolo_detector/yolo_detector.py -> /home/ww/Documents/detector/install/yolo_detector/lib/python3.8/site-packages/yolo_detector
+[0.448s] byte-compiling /home/ww/Documents/detector/install/yolo_detector/lib/python3.8/site-packages/yolo_detector/__init__.py to __init__.cpython-38.pyc
+[0.448s] byte-compiling /home/ww/Documents/detector/install/yolo_detector/lib/python3.8/site-packages/yolo_detector/yolo_detector.py to yolo_detector.cpython-38.pyc
+[0.448s] running install_data
+[0.449s] running install_egg_info
+[0.450s] removing '/home/ww/Documents/detector/install/yolo_detector/lib/python3.8/site-packages/yolo_detector-0.0.0-py3.8.egg-info' (and everything under it)
+[0.450s] Copying ../../build/yolo_detector/yolo_detector.egg-info to /home/ww/Documents/detector/install/yolo_detector/lib/python3.8/site-packages/yolo_detector-0.0.0-py3.8.egg-info
+[0.450s] running install_scripts
+[0.460s] writing list of installed files to '/home/ww/Documents/detector/build/yolo_detector/install.log'
+[0.472s] Invoked command in '/home/ww/Documents/detector/src/yolo_detector' returned '0': CONDA_PROMPT_MODIFIER=(yolov10) PYTHONPATH=/home/ww/Documents/detector/build/yolo_detector/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ww/Documents/detector/install/yolo_detector/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/yolo_detector build --build-base /home/ww/Documents/detector/build/yolo_detector/build install --record /home/ww/Documents/detector/build/yolo_detector/install.log --install-scripts $base/lib/yolo_detector --single-version-externally-managed install_data

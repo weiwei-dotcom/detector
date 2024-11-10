@@ -1,5 +1,6 @@
 #include <rclcpp/rclcpp.hpp>
 #include <sensor_msgs/msg/image.hpp>
+#include <std_msgs/msg/bool.hpp>
 #include <opencv2/opencv.hpp>
 #include <cv_bridge/cv_bridge.h>
 #include <image_transport/image_transport.hpp>
@@ -12,16 +13,18 @@ public:
     CameraNode() : Node("camera_node")
     {
         // 读取相机参数
-
-        Config _config = LoadConfig("/home/ww/Documents/detector/src/camera_node/config/config.yaml");
+        _config = LoadConfig("/home/ww/Documents/detector/src/camera_node/config/config.yaml");
         
-        CameraParams _camera_params = LoadCameraParameters(_config._camera_config_path);
+        _camera_params = LoadCameraParameters(_config._camera_config_path);
 
         // 设置发布器
         image_publisher_ = image_transport::create_publisher(this, "image");
 
         // 打开USB摄像头
-        cap_.open(_config._device_port);
+        cap_.open(_config._device_port, cv::CAP_V4L2);
+        cap_.set(cv::CAP_PROP_FRAME_WIDTH, _config._frame_width);  //设置捕获视频的宽度
+        cap_.set(cv::CAP_PROP_FRAME_HEIGHT, _config._frame_height);  //设置捕获视频的高度
+        cap_.set(cv::CAP_PROP_FPS, _config._camera_fps);
         if (!cap_.isOpened())
         {
             RCLCPP_ERROR(this->get_logger(), "Failed to open the camera!");
@@ -41,11 +44,9 @@ private:
         std::string _camera_config_path;
         std::string _device_port;
         int _pub_time_interval;
-        Config(const bool &undistort = false, 
-            const std::string &camera_config_path = "/home/ww/Documents/detector/src/camera_node/config/camera_config.yaml", 
-            const std::string &device_port = "/dev/vedio0",
-            const int &pub_time_interval = 30) 
-            : _undistort(false), _camera_config_path(camera_config_path), _device_port(device_port), _pub_time_interval(pub_time_interval){}
+        int _frame_width;
+        int _frame_height;
+        int _camera_fps;
     };
 
     struct CameraParams
@@ -57,18 +58,22 @@ private:
             const cv::Mat &dist_coeffs = (cv::Mat_<double>(1, 5) << 0.0, 0.0, 0.0, 0.0, 0.0)) 
             :  _camera_matrix(camera_matrix), _dist_coeffs(dist_coeffs) {}
     };
-
-    Config LoadConfig(const std::string &config_path)
+    
+    Config LoadConfig(std::string config_path)
     {
-        std::cout << "here:63" << std::endl;
         YAML::Node yaml = YAML::LoadFile(config_path);
-        std::cout << "here:66" << std::endl;
-
-        Config config(yaml["undistort"].as<bool>(), yaml["camera_config_path"].as<std::string>(), yaml["device_port"].as<std::string>(), yaml["pub_time_interval"].as<int>());
+        Config config;
+        config._undistort = yaml["undistort"].as<bool>();
+        config._camera_config_path = yaml["camera_config_path"].as<std::string>(), 
+        config._device_port = yaml["device_port"].as<std::string>(), 
+        config._pub_time_interval = yaml["pub_time_interval"].as<int>(), 
+        config._frame_width = yaml["frame_width"].as<int>(),
+        config._frame_height = yaml["frame_height"].as<int>(),
+        config._camera_fps = yaml["camera_fps"].as<int>();
         return config;
     };
     
-    CameraParams LoadCameraParameters(const std::string &camera_params_path)
+    CameraParams LoadCameraParameters(std::string camera_params_path)
     {
         // 从YAML文件加载相机参数
         YAML::Node yaml = YAML::LoadFile(camera_params_path);
@@ -77,11 +82,11 @@ private:
         cam_params._camera_matrix.at<double>(1,1) = yaml["fy"].as<double>();
         cam_params._camera_matrix.at<double>(0,2) = yaml["cx"].as<double>();
         cam_params._camera_matrix.at<double>(1,2) = yaml["cy"].as<double>();
-        cam_params._dist_coeffs.at<double>(0) = yaml["k1"].as<double>();
-        cam_params._dist_coeffs.at<double>(1) = yaml["k2"].as<double>();
-        cam_params._dist_coeffs.at<double>(2) = yaml["p1"].as<double>();
-        cam_params._dist_coeffs.at<double>(3) = yaml["p2"].as<double>();
-        cam_params._dist_coeffs.at<double>(4) = yaml["k3"].as<double>();
+        cam_params._dist_coeffs.at<double>(0,0) = yaml["k1"].as<double>();
+        cam_params._dist_coeffs.at<double>(0,1) = yaml["k2"].as<double>();
+        cam_params._dist_coeffs.at<double>(0,2) = yaml["p1"].as<double>();
+        cam_params._dist_coeffs.at<double>(0,3) = yaml["p2"].as<double>();
+        cam_params._dist_coeffs.at<double>(0,4) = yaml["k3"].as<double>();
         return cam_params;
     }
 
@@ -94,13 +99,20 @@ private:
             RCLCPP_ERROR(this->get_logger(), "Captured an empty frame!");
             return;
         }
-
-        // 矫正图像
+        
+        cv::Mat frame_undistort;
+        frame.copyTo(frame_undistort);
         if (_config._undistort)
-            cv::undistort(frame, frame, _camera_params._camera_matrix, _camera_params._dist_coeffs);
+        {
+            std::cout << "image_undistorted" << std::endl;
+            cv::undistort(frame, frame_undistort, _camera_params._camera_matrix, _camera_params._dist_coeffs);
+        }
 
         // 将OpenCV图像转换为ROS消息
-        auto msg = cv_bridge::CvImage(std_msgs::msg::Header(), "bgr8", frame).toImageMsg();
+        std_msgs::msg::Header header;
+        header.frame_id = "camera";
+        header.stamp = this->now();
+        auto msg = cv_bridge::CvImage(std_msgs::msg::Header(), "bgr8", frame_undistort).toImageMsg();
         
         // 发布图像消息
         image_publisher_.publish(msg);
@@ -109,9 +121,9 @@ private:
     rclcpp::TimerBase::SharedPtr timer_;
     image_transport::Publisher image_publisher_;
     cv::VideoCapture cap_;
-
     // 全局参数
     Config _config;
+    // 相机内参
     CameraParams _camera_params;
 };
 

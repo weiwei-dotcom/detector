@@ -1,0 +1,124 @@
+[0.011s] Invoking command in '/home/ww/Documents/detector/build/camera_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ww/Documents/detector/build/camera_node -- -j12 -l12
+[0.027s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.038s] -- Using PYTHON_EXECUTABLE: /home/ww/anaconda3/bin/python3
+[0.143s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.162s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.164s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.236s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.266s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.267s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.353s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[0.418s] -- Found cv_bridge: 3.0.7 (/opt/ros/foxy/share/cv_bridge/cmake)
+[0.438s] -- Found image_transport: 2.4.0 (/opt/ros/foxy/share/image_transport/cmake)
+[0.463s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.539s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.539s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.539s] -- Configured cppcheck include dirs: 
+[0.540s] -- Configured cppcheck exclude dirs and/or files: 
+[0.540s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.540s] -- Configured cpplint exclude dirs and/or files: 
+[0.540s] -- Added test 'lint_cmake' to check CMake code style
+[0.541s] -- Added test 'uncrustify' to check C / C++ code style
+[0.541s] -- Configured uncrustify additional arguments: 
+[0.541s] -- Added test 'xmllint' to check XML markup files
+[0.542s] -- Configuring done
+[0.552s] -- Generating done
+[0.553s] -- Build files have been written to: /home/ww/Documents/detector/build/camera_node
+[0.582s] [ 50%] [32m[1mLinking CXX executable camera_node[0m
+[0.830s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o: in function `YAML::Exception::Exception(YAML::Mark const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+[0.831s] camera_node.cpp:(.text._ZN4YAML9ExceptionC2ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML9ExceptionC5ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x61): undefined reference to `vtable for YAML::Exception'
+[0.831s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o: in function `YAML::RepresentationException::RepresentationException(YAML::Mark const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+[0.831s] camera_node.cpp:(.text._ZN4YAML23RepresentationExceptionC2ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML23RepresentationExceptionC5ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x32): undefined reference to `vtable for YAML::RepresentationException'
+[0.831s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o: in function `YAML::InvalidNode::InvalidNode()':
+[0.831s] camera_node.cpp:(.text._ZN4YAML11InvalidNodeC2Ev[_ZN4YAML11InvalidNodeC5Ev]+0x89): undefined reference to `vtable for YAML::InvalidNode'
+[0.831s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o: in function `YAML::BadConversion::BadConversion(YAML::Mark const&)':
+[0.831s] camera_node.cpp:(.text._ZN4YAML13BadConversionC2ERKNS_4MarkE[_ZN4YAML13BadConversionC5ERKNS_4MarkE]+0x79): undefined reference to `vtable for YAML::BadConversion'
+[0.831s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o: in function `YAML::BadSubscript::BadSubscript()':
+[0.831s] camera_node.cpp:(.text._ZN4YAML12BadSubscriptC2Ev[_ZN4YAML12BadSubscriptC5Ev]+0x89): undefined reference to `vtable for YAML::BadSubscript'
+[0.831s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o: in function `YAML::detail::memory_holder::create_node()':
+[0.831s] camera_node.cpp:(.text._ZN4YAML6detail13memory_holder11create_nodeEv[_ZN4YAML6detail13memory_holder11create_nodeEv]+0x20): undefined reference to `YAML::detail::memory::create_node()'
+[0.831s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o: in function `YAML::detail::node_ref::mark_defined()':
+[0.831s] camera_node.cpp:(.text._ZN4YAML6detail8node_ref12mark_definedEv[_ZN4YAML6detail8node_ref12mark_definedEv]+0x20): undefined reference to `YAML::detail::node_data::mark_defined()'
+[0.831s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o: in function `YAML::detail::node_ref::set_null()':
+[0.831s] camera_node.cpp:(.text._ZN4YAML6detail8node_ref8set_nullEv[_ZN4YAML6detail8node_ref8set_nullEv]+0x20): undefined reference to `YAML::detail::node_data::set_null()'
+[0.831s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o: in function `YAML::detail::node_ref::set_scalar(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+[0.831s] camera_node.cpp:(.text._ZN4YAML6detail8node_ref10set_scalarERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML6detail8node_ref10set_scalarERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x2e): undefined reference to `YAML::detail::node_data::set_scalar(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+[0.831s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o: in function `YAML::Node::EnsureNodeExists() const':
+[0.831s] camera_node.cpp:(.text._ZNK4YAML4Node16EnsureNodeExistsEv[_ZNK4YAML4Node16EnsureNodeExistsEv]+0x39): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[0.831s] /usr/bin/ld: camera_node.cpp:(.text._ZNK4YAML4Node16EnsureNodeExistsEv[_ZNK4YAML4Node16EnsureNodeExistsEv]+0x43): undefined reference to `typeinfo for YAML::InvalidNode'
+[0.831s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o: in function `YAML::Node::Mark() const':
+[0.831s] camera_node.cpp:(.text._ZNK4YAML4Node4MarkEv[_ZNK4YAML4Node4MarkEv]+0x39): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[0.831s] /usr/bin/ld: camera_node.cpp:(.text._ZNK4YAML4Node4MarkEv[_ZNK4YAML4Node4MarkEv]+0x43): undefined reference to `typeinfo for YAML::InvalidNode'
+[0.831s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o: in function `YAML::Node::Type() const':
+[0.831s] camera_node.cpp:(.text._ZNK4YAML4Node4TypeEv[_ZNK4YAML4Node4TypeEv]+0x39): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[0.831s] /usr/bin/ld: camera_node.cpp:(.text._ZNK4YAML4Node4TypeEv[_ZNK4YAML4Node4TypeEv]+0x43): undefined reference to `typeinfo for YAML::InvalidNode'
+[0.831s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o: in function `YAML::Node::Scalar[abi:cxx11]() const':
+[0.832s] camera_node.cpp:(.text._ZNK4YAML4Node6ScalarB5cxx11Ev[_ZNK4YAML4Node6ScalarB5cxx11Ev]+0x39): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[0.832s] /usr/bin/ld: camera_node.cpp:(.text._ZNK4YAML4Node6ScalarB5cxx11Ev[_ZNK4YAML4Node6ScalarB5cxx11Ev]+0x43): undefined reference to `typeinfo for YAML::InvalidNode'
+[0.832s] /usr/bin/ld: camera_node.cpp:(.text._ZNK4YAML4Node6ScalarB5cxx11Ev[_ZNK4YAML4Node6ScalarB5cxx11Ev]+0x71): undefined reference to `YAML::detail::node_data::empty_scalar[abi:cxx11]'
+[0.832s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o: in function `void YAML::Node::Assign<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+[0.832s] camera_node.cpp:(.text._ZN4YAML4Node6AssignINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEvRKT_[_ZN4YAML4Node6AssignINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEvRKT_]+0x3d): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[0.832s] /usr/bin/ld: camera_node.cpp:(.text._ZN4YAML4Node6AssignINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEvRKT_[_ZN4YAML4Node6AssignINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEvRKT_]+0x47): undefined reference to `typeinfo for YAML::InvalidNode'
+[0.832s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o: in function `CameraNode::LoadConfig(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)':
+[0.832s] camera_node.cpp:(.text._ZN10CameraNode10LoadConfigENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN10CameraNode10LoadConfigENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x49): undefined reference to `YAML::LoadFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+[0.832s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o: in function `CameraNode::LoadCameraParameters(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)':
+[0.832s] camera_node.cpp:(.text._ZN10CameraNode20LoadCameraParametersENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN10CameraNode20LoadCameraParametersENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x49): undefined reference to `YAML::LoadFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+[0.832s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o: in function `YAML::Node YAML::Node::operator[]<char [10]>(char const (&) [10])':
+[0.832s] camera_node.cpp:(.text._ZN4YAML4NodeixIA10_cEES0_RKT_[_ZN4YAML4NodeixIA10_cEES0_RKT_]+0x50): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[0.832s] /usr/bin/ld: camera_node.cpp:(.text._ZN4YAML4NodeixIA10_cEES0_RKT_[_ZN4YAML4NodeixIA10_cEES0_RKT_]+0x5a): undefined reference to `typeinfo for YAML::InvalidNode'
+[0.832s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o: in function `bool YAML::Node::as<bool>() const':
+[0.832s] camera_node.cpp:(.text._ZNK4YAML4Node2asIbEET_v[_ZNK4YAML4Node2asIbEET_v]+0x48): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[0.832s] /usr/bin/ld: camera_node.cpp:(.text._ZNK4YAML4Node2asIbEET_v[_ZNK4YAML4Node2asIbEET_v]+0x52): undefined reference to `typeinfo for YAML::InvalidNode'
+[0.832s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o: in function `YAML::Node YAML::Node::operator[]<char [19]>(char const (&) [19])':
+[0.832s] camera_node.cpp:(.text._ZN4YAML4NodeixIA19_cEES0_RKT_[_ZN4YAML4NodeixIA19_cEES0_RKT_]+0x50): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[0.832s] /usr/bin/ld: camera_node.cpp:(.text._ZN4YAML4NodeixIA19_cEES0_RKT_[_ZN4YAML4NodeixIA19_cEES0_RKT_]+0x5a): undefined reference to `typeinfo for YAML::InvalidNode'
+[0.832s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o: in function `std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > YAML::Node::as<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >() const':
+[0.832s] camera_node.cpp:(.text._ZNK4YAML4Node2asINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEET_v[_ZNK4YAML4Node2asINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEET_v]+0x4c): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[0.832s] /usr/bin/ld: camera_node.cpp:(.text._ZNK4YAML4Node2asINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEET_v[_ZNK4YAML4Node2asINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEET_v]+0x56): undefined reference to `typeinfo for YAML::InvalidNode'
+[0.832s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o: in function `YAML::Node YAML::Node::operator[]<char [12]>(char const (&) [12])':
+[0.832s] camera_node.cpp:(.text._ZN4YAML4NodeixIA12_cEES0_RKT_[_ZN4YAML4NodeixIA12_cEES0_RKT_]+0x50): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[0.832s] /usr/bin/ld: camera_node.cpp:(.text._ZN4YAML4NodeixIA12_cEES0_RKT_[_ZN4YAML4NodeixIA12_cEES0_RKT_]+0x5a): undefined reference to `typeinfo for YAML::InvalidNode'
+[0.832s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o: in function `YAML::Node YAML::Node::operator[]<char [18]>(char const (&) [18])':
+[0.832s] camera_node.cpp:(.text._ZN4YAML4NodeixIA18_cEES0_RKT_[_ZN4YAML4NodeixIA18_cEES0_RKT_]+0x50): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[0.832s] /usr/bin/ld: camera_node.cpp:(.text._ZN4YAML4NodeixIA18_cEES0_RKT_[_ZN4YAML4NodeixIA18_cEES0_RKT_]+0x5a): undefined reference to `typeinfo for YAML::InvalidNode'
+[0.833s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o: in function `int YAML::Node::as<int>() const':
+[0.833s] camera_node.cpp:(.text._ZNK4YAML4Node2asIiEET_v[_ZNK4YAML4Node2asIiEET_v]+0x48): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[0.833s] /usr/bin/ld: camera_node.cpp:(.text._ZNK4YAML4Node2asIiEET_v[_ZNK4YAML4Node2asIiEET_v]+0x52): undefined reference to `typeinfo for YAML::InvalidNode'
+[0.833s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o: in function `YAML::Node YAML::Node::operator[]<char [13]>(char const (&) [13])':
+[0.833s] camera_node.cpp:(.text._ZN4YAML4NodeixIA13_cEES0_RKT_[_ZN4YAML4NodeixIA13_cEES0_RKT_]+0x50): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[0.833s] /usr/bin/ld: camera_node.cpp:(.text._ZN4YAML4NodeixIA13_cEES0_RKT_[_ZN4YAML4NodeixIA13_cEES0_RKT_]+0x5a): undefined reference to `typeinfo for YAML::InvalidNode'
+[0.833s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o: in function `YAML::Node YAML::Node::operator[]<char [11]>(char const (&) [11])':
+[0.833s] camera_node.cpp:(.text._ZN4YAML4NodeixIA11_cEES0_RKT_[_ZN4YAML4NodeixIA11_cEES0_RKT_]+0x50): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[0.833s] /usr/bin/ld: camera_node.cpp:(.text._ZN4YAML4NodeixIA11_cEES0_RKT_[_ZN4YAML4NodeixIA11_cEES0_RKT_]+0x5a): undefined reference to `typeinfo for YAML::InvalidNode'
+[0.833s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o: in function `YAML::Node YAML::Node::operator[]<char [3]>(char const (&) [3])':
+[0.833s] camera_node.cpp:(.text._ZN4YAML4NodeixIA3_cEES0_RKT_[_ZN4YAML4NodeixIA3_cEES0_RKT_]+0x50): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[0.833s] /usr/bin/ld: camera_node.cpp:(.text._ZN4YAML4NodeixIA3_cEES0_RKT_[_ZN4YAML4NodeixIA3_cEES0_RKT_]+0x5a): undefined reference to `typeinfo for YAML::InvalidNode'
+[0.833s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o: in function `double YAML::Node::as<double>() const':
+[0.833s] camera_node.cpp:(.text._ZNK4YAML4Node2asIdEET_v[_ZNK4YAML4Node2asIdEET_v]+0x48): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+[0.833s] /usr/bin/ld: camera_node.cpp:(.text._ZNK4YAML4Node2asIdEET_v[_ZNK4YAML4Node2asIdEET_v]+0x52): undefined reference to `typeinfo for YAML::InvalidNode'
+[0.833s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o: in function `YAML::TypedBadConversion<bool>::~TypedBadConversion()':
+[0.833s] camera_node.cpp:(.text._ZN4YAML18TypedBadConversionIbED2Ev[_ZN4YAML18TypedBadConversionIbED5Ev]+0x26): undefined reference to `YAML::BadConversion::~BadConversion()'
+[0.833s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o: in function `YAML::as_if<bool, void>::operator()() const':
+[0.833s] camera_node.cpp:(.text._ZNK4YAML5as_ifIbvEclEv[_ZNK4YAML5as_ifIbvEclEv]+0x94): undefined reference to `YAML::convert<bool>::decode(YAML::Node const&, bool&)'
+[0.833s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o: in function `YAML::TypedBadConversion<int>::~TypedBadConversion()':
+[0.833s] camera_node.cpp:(.text._ZN4YAML18TypedBadConversionIiED2Ev[_ZN4YAML18TypedBadConversionIiED5Ev]+0x26): undefined reference to `YAML::BadConversion::~BadConversion()'
+[0.833s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o: in function `YAML::TypedBadConversion<double>::~TypedBadConversion()':
+[0.833s] camera_node.cpp:(.text._ZN4YAML18TypedBadConversionIdED2Ev[_ZN4YAML18TypedBadConversionIdED5Ev]+0x26): undefined reference to `YAML::BadConversion::~BadConversion()'
+[0.833s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o: in function `YAML::detail::node& YAML::detail::node_data::get<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::shared_ptr<YAML::detail::memory_holder>)':
+[0.833s] camera_node.cpp:(.text._ZN4YAML6detail9node_data3getINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0xe8): undefined reference to `YAML::detail::node_data::convert_to_map(std::shared_ptr<YAML::detail::memory_holder>)'
+[0.833s] /usr/bin/ld: camera_node.cpp:(.text._ZN4YAML6detail9node_data3getINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x112): undefined reference to `YAML::BadSubscript::~BadSubscript()'
+[0.833s] /usr/bin/ld: camera_node.cpp:(.text._ZN4YAML6detail9node_data3getINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x11c): undefined reference to `typeinfo for YAML::BadSubscript'
+[0.833s] /usr/bin/ld: camera_node.cpp:(.text._ZN4YAML6detail9node_data3getINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x246): undefined reference to `YAML::detail::node_data::insert_map_pair(YAML::detail::node&, YAML::detail::node&)'
+[0.834s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o: in function `YAML::detail::node& YAML::detail::node_data::convert_to_node<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::shared_ptr<YAML::detail::memory_holder>)':
+[0.834s] camera_node.cpp:(.text._ZN4YAML6detail9node_data15convert_to_nodeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data15convert_to_nodeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x69): undefined reference to `YAML::detail::memory_holder::merge(YAML::detail::memory_holder&)'
+[0.834s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o: in function `YAML::TypedBadConversion<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >::~TypedBadConversion()':
+[0.834s] camera_node.cpp:(.text._ZN4YAML18TypedBadConversionINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEED2Ev[_ZN4YAML18TypedBadConversionINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEED5Ev]+0x26): undefined reference to `YAML::BadConversion::~BadConversion()'
+[0.834s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o:(.data.rel.ro._ZTIN4YAML18TypedBadConversionIdEE[_ZTIN4YAML18TypedBadConversionIdEE]+0x10): undefined reference to `typeinfo for YAML::BadConversion'
+[0.834s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o:(.data.rel.ro._ZTIN4YAML18TypedBadConversionIiEE[_ZTIN4YAML18TypedBadConversionIiEE]+0x10): undefined reference to `typeinfo for YAML::BadConversion'
+[0.834s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o:(.data.rel.ro._ZTIN4YAML18TypedBadConversionIbEE[_ZTIN4YAML18TypedBadConversionIbEE]+0x10): undefined reference to `typeinfo for YAML::BadConversion'
+[0.834s] /usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o:(.data.rel.ro._ZTIN4YAML18TypedBadConversionINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE[_ZTIN4YAML18TypedBadConversionINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE]+0x10): undefined reference to `typeinfo for YAML::BadConversion'
+[0.834s] collect2: error: ld returned 1 exit status
+[0.834s] make[2]: *** [CMakeFiles/camera_node.dir/build.make:206: camera_node] Error 1
+[0.834s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/camera_node.dir/all] Error 2
+[0.834s] make: *** [Makefile:141: all] Error 2
+[0.835s] Invoked command in '/home/ww/Documents/detector/build/camera_node' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ww/Documents/detector/build/camera_node -- -j12 -l12
