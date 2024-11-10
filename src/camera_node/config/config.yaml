@@ -1,0 +1,5 @@
+
+device_port: /dev/video0
+undistort: false
+camera_config_path: /home/ww/Documents/detector/src/camera_node/config/camera_config.yaml
+pub_time_interval: 30

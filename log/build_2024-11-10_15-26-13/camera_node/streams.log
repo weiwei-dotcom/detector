@@ -1,0 +1,30 @@
+[0.007s] Invoking command in '/home/ww/Documents/detector/build/camera_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ww/Documents/detector/build/camera_node -- -j12 -l12
+[0.031s] [35m[1mScanning dependencies of target camera_node[0m
+[0.049s] [ 50%] [32mBuilding CXX object CMakeFiles/camera_node.dir/src/camera_node.cpp.o[0m
+[1.337s] [01m[K/home/ww/Documents/detector/src/camera_node/src/camera_node.cpp:[m[K In constructor ‘[01m[KCameraNode::Config::Config(const bool&, const string&, const string&, const int&)[m[K’:
+[1.337s] [01m[K/home/ww/Documents/detector/src/camera_node/src/camera_node.cpp:44:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kundistort[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.337s]    44 |         Config([01;35m[Kconst bool &undistort = false[m[K,
+[1.338s]       |                [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+[2.048s] [100%] [32m[1mLinking CXX executable camera_node[0m
+[2.297s] [100%] Built target camera_node
+[2.303s] Invoked command in '/home/ww/Documents/detector/build/camera_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ww/Documents/detector/build/camera_node -- -j12 -l12
+[2.320s] Invoking command in '/home/ww/Documents/detector/build/camera_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ww/Documents/detector/build/camera_node
+[2.324s] -- Install configuration: ""
+[2.324s] -- Installing: /home/ww/Documents/detector/install/camera_node/lib/camera_node/camera_node
+[2.325s] -- Set runtime path of "/home/ww/Documents/detector/install/camera_node/lib/camera_node/camera_node" to ""
+[2.325s] -- Up-to-date: /home/ww/Documents/detector/install/camera_node/share/ament_index/resource_index/package_run_dependencies/camera_node
+[2.325s] -- Up-to-date: /home/ww/Documents/detector/install/camera_node/share/ament_index/resource_index/parent_prefix_path/camera_node
+[2.325s] -- Up-to-date: /home/ww/Documents/detector/install/camera_node/share/camera_node/environment/ament_prefix_path.sh
+[2.326s] -- Up-to-date: /home/ww/Documents/detector/install/camera_node/share/camera_node/environment/ament_prefix_path.dsv
+[2.326s] -- Up-to-date: /home/ww/Documents/detector/install/camera_node/share/camera_node/environment/path.sh
+[2.326s] -- Up-to-date: /home/ww/Documents/detector/install/camera_node/share/camera_node/environment/path.dsv
+[2.326s] -- Up-to-date: /home/ww/Documents/detector/install/camera_node/share/camera_node/local_setup.bash
+[2.326s] -- Up-to-date: /home/ww/Documents/detector/install/camera_node/share/camera_node/local_setup.sh
+[2.326s] -- Up-to-date: /home/ww/Documents/detector/install/camera_node/share/camera_node/local_setup.zsh
+[2.326s] -- Up-to-date: /home/ww/Documents/detector/install/camera_node/share/camera_node/local_setup.dsv
+[2.326s] -- Installing: /home/ww/Documents/detector/install/camera_node/share/camera_node/package.dsv
+[2.326s] -- Up-to-date: /home/ww/Documents/detector/install/camera_node/share/ament_index/resource_index/packages/camera_node
+[2.327s] -- Up-to-date: /home/ww/Documents/detector/install/camera_node/share/camera_node/cmake/camera_nodeConfig.cmake
+[2.327s] -- Up-to-date: /home/ww/Documents/detector/install/camera_node/share/camera_node/cmake/camera_nodeConfig-version.cmake
+[2.327s] -- Up-to-date: /home/ww/Documents/detector/install/camera_node/share/camera_node/package.xml
+[2.327s] Invoked command in '/home/ww/Documents/detector/build/camera_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/ww/Documents/detector/build/camera_node

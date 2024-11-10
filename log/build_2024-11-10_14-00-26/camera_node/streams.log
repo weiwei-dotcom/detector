@@ -1,0 +1,11 @@
+[0.007s] Invoking command in '/home/ww/Documents/detector/build/camera_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ww/Documents/detector/build/camera_node -- -j12 -l12
+[0.031s] [35m[1mScanning dependencies of target camera_node[0m
+[0.048s] [ 50%] [32mBuilding CXX object CMakeFiles/camera_node.dir/src/camera_node.cpp.o[0m
+[1.331s] [01m[K/home/ww/Documents/detector/src/camera_node/src/camera_node.cpp:[m[K In member function ‘[01m[Kbool CameraNode::loadCameraParameters()[m[K’:
+[1.331s] [01m[K/home/ww/Documents/detector/src/camera_node/src/camera_node.cpp:39:38:[m[K [01;31m[Kerror: [m[Kunable to find string literal operator ‘[01m[Koperator""distort[m[K’ with ‘[01m[Kconst char [11][m[K’, ‘[01m[Klong unsigned int[m[K’ arguments
+[1.332s]    39 |         std::cout << "config["distort[01;31m[K"]: "[m[K << config["distort"] << std::endl;
+[1.332s]       |                                      [01;31m[K^~~~~[m[K
+[1.784s] make[2]: *** [CMakeFiles/camera_node.dir/build.make:63: CMakeFiles/camera_node.dir/src/camera_node.cpp.o] Error 1
+[1.784s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/camera_node.dir/all] Error 2
+[1.784s] make: *** [Makefile:141: all] Error 2
+[1.785s] Invoked command in '/home/ww/Documents/detector/build/camera_node' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ww/Documents/detector/build/camera_node -- -j12 -l12

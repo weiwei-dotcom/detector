@@ -1,0 +1,12 @@
+[0.007s] Invoking command in '/home/ww/Documents/detector/build/camera_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ww/Documents/detector/build/camera_node -- -j12 -l12
+[0.030s] [35m[1mScanning dependencies of target camera_node[0m
+[0.049s] [ 50%] [32mBuilding CXX object CMakeFiles/camera_node.dir/src/camera_node.cpp.o[0m
+[1.364s] [01m[K/home/ww/Documents/detector/src/camera_node/src/camera_node.cpp:[m[K In member function ‘[01m[Kvoid CameraNode::captureAndPublish()[m[K’:
+[1.364s] [01m[K/home/ww/Documents/detector/src/camera_node/src/camera_node.cpp:69:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kdistort[m[K’ was not declared in this scope; did you mean ‘[01m[Kundistort[m[K’?
+[1.364s]    69 |         std::cout << "distort: " << [01;31m[Kdistort[m[K << std::endl;
+[1.364s]       |                                     [01;31m[K^~~~~~~[m[K
+[1.364s]       |                                     [32m[Kundistort[m[K
+[1.810s] make[2]: *** [CMakeFiles/camera_node.dir/build.make:63: CMakeFiles/camera_node.dir/src/camera_node.cpp.o] Error 1
+[1.810s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/camera_node.dir/all] Error 2
+[1.810s] make: *** [Makefile:141: all] Error 2
+[1.811s] Invoked command in '/home/ww/Documents/detector/build/camera_node' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/ww/Documents/detector/build/camera_node -- -j12 -l12

@@ -1,0 +1,4 @@
+[01m[K/home/ww/Documents/detector/src/camera_node/src/camera_node.cpp:[m[K In constructor ‘[01m[KCameraNode::Config::Config(const bool&, const string&, const string&, const int&)[m[K’:
+[01m[K/home/ww/Documents/detector/src/camera_node/src/camera_node.cpp:44:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kundistort[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   44 |         Config([01;35m[Kconst bool &undistort = false[m[K,
+      |                [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~[m[K

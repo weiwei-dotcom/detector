@@ -1,2 +1,0 @@
-Invoking command in '/home/ww/Documents/detector/build/img_cat': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/ww/Documents/detector/src/img_cat -DCMAKE_INSTALL_PREFIX=/home/ww/Documents/detector/install/img_cat
-Invoked command in '/home/ww/Documents/detector/build/img_cat' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/ww/Documents/detector/src/img_cat -DCMAKE_INSTALL_PREFIX=/home/ww/Documents/detector/install/img_cat
