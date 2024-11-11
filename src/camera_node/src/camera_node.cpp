@@ -6,10 +6,13 @@
 #include <image_transport/image_transport.hpp>
 #include <fstream>
 #include <yaml-cpp/yaml.h>
+#include <librealsense2/rs.hpp>
 
 class CameraNode : public rclcpp::Node
 {
 public:
+    // 创建realsense管道
+    rs2::pipeline p;
     CameraNode() : Node("camera_node")
     {
         // 读取相机参数
@@ -20,16 +23,22 @@ public:
         // 设置发布器
         image_publisher_ = image_transport::create_publisher(this, "image");
 
-        // 打开USB摄像头
-        cap_.open(_config._device_port, cv::CAP_V4L2);
-        cap_.set(cv::CAP_PROP_FRAME_WIDTH, _config._frame_width);  //设置捕获视频的宽度
-        cap_.set(cv::CAP_PROP_FRAME_HEIGHT, _config._frame_height);  //设置捕获视频的高度
-        cap_.set(cv::CAP_PROP_FPS, _config._camera_fps);
-        if (!cap_.isOpened())
-        {
-            RCLCPP_ERROR(this->get_logger(), "Failed to open the camera!");
-            rclcpp::shutdown();
-        }
+        rs2::config rs_cfg;
+        rs_cfg.enable_stream(RS2_STREAM_COLOR, _config._frame_width, _config._frame_height, RS2_FORMAT_BGR8, _config._camera_fps);
+
+        // 开启realsense相机管道
+        p.start(rs_cfg);
+
+        // // 打开USB摄像头
+        // cap_.open(_config._device_port, cv::CAP_V4L2);
+        // cap_.set(cv::CAP_PROP_FRAME_WIDTH, _config._frame_width);  //设置捕获视频的宽度
+        // cap_.set(cv::CAP_PROP_FRAME_HEIGHT, _config._frame_height);  //设置捕获视频的高度
+        // cap_.set(cv::CAP_PROP_FPS, _config._camera_fps);
+        // if (!cap_.isOpened())
+        // {
+        //     RCLCPP_ERROR(this->get_logger(), "Failed to open the camera!");
+        //     rclcpp::shutdown();
+        // }
 
         // 定时器，用于定时抓取和发布图像
         timer_ = this->create_wall_timer(
@@ -92,8 +101,12 @@ private:
 
     void captureAndPublish()
     {
-        cv::Mat frame;
-        cap_ >> frame;
+        rs2::frameset frames = p.wait_for_frames();
+        rs2::frame color_frame = frames.get_color_frame();
+        const int w = color_frame.as<rs2::video_frame>().get_width();
+        const int h = color_frame.as<rs2::video_frame>().get_height();
+        cv::Mat frame(cv::Size(w,h), CV_8UC3, (void*)color_frame.get_data());
+        
         if (frame.empty())
         {
             RCLCPP_ERROR(this->get_logger(), "Captured an empty frame!");
@@ -102,7 +115,6 @@ private:
         
         if (_config._undistort)
         {
-            std::cout << "image_undistorted" << std::endl;
             cv::undistort(frame, frame, _camera_params._camera_matrix, _camera_params._dist_coeffs);
         }
 
@@ -115,14 +127,13 @@ private:
         // 发布图像消息
         image_publisher_.publish(msg);
     }
-
-    rclcpp::TimerBase::SharedPtr timer_;
-    image_transport::Publisher image_publisher_;
-    cv::VideoCapture cap_;
     // 全局参数
     Config _config;
     // 相机内参
     CameraParams _camera_params;
+
+    rclcpp::TimerBase::SharedPtr timer_;
+    image_transport::Publisher image_publisher_;
 };
 
 int main(int argc, char *argv[])
@@ -130,6 +141,8 @@ int main(int argc, char *argv[])
     rclcpp::init(argc, argv);
     auto node = std::make_shared<CameraNode>();
     rclcpp::spin(node);
+    // 关闭realsense相机管道
+    node->p.stop();
     rclcpp::shutdown();
     return 0;
 }

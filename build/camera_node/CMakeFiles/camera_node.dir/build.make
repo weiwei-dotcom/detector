@@ -163,6 +163,7 @@ camera_node: /opt/ros/foxy/lib/librcpputils.so
 camera_node: /opt/ros/foxy/lib/libament_index_cpp.so
 camera_node: /opt/ros/foxy/lib/libclass_loader.so
 camera_node: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+camera_node: /usr/local/lib/librealsense2.so.2.55.1
 camera_node: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_generator_c.so
 camera_node: /opt/ros/foxy/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so
 camera_node: /opt/ros/foxy/lib/librcl_interfaces__rosidl_generator_c.so
@@ -214,6 +215,7 @@ camera_node: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.2.0
 camera_node: /opt/ros/foxy/lib/x86_64-linux-gnu/libconsole_bridge.so.1.0
 camera_node: /opt/ros/foxy/lib/librcpputils.so
 camera_node: /opt/ros/foxy/lib/librcutils.so
+camera_node: /usr/local/lib/librsutils.a
 camera_node: CMakeFiles/camera_node.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/wl/Documents/detector/build/camera_node/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable camera_node"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/camera_node.dir/link.txt --verbose=$(VERBOSE)

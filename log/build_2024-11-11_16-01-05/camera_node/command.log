@@ -1,0 +1,4 @@
+Invoking command in '/home/wl/Documents/detector/build/camera_node': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(yolov10) /home/wl/anaconda3/envs/yolov10/bin/cmake --build /home/wl/Documents/detector/build/camera_node -- -j16 -l16
+Invoked command in '/home/wl/Documents/detector/build/camera_node' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(yolov10) /home/wl/anaconda3/envs/yolov10/bin/cmake --build /home/wl/Documents/detector/build/camera_node -- -j16 -l16
+Invoking command in '/home/wl/Documents/detector/build/camera_node': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(yolov10) /home/wl/anaconda3/envs/yolov10/bin/cmake --install /home/wl/Documents/detector/build/camera_node
+Invoked command in '/home/wl/Documents/detector/build/camera_node' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(yolov10) /home/wl/anaconda3/envs/yolov10/bin/cmake --install /home/wl/Documents/detector/build/camera_node

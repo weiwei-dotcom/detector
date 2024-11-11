@@ -813,8 +813,54 @@ CMakeFiles/camera_node.dir/src/camera_node.cpp.o: /home/wl/Documents/detector/sr
   /usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h \
   /usr/lib/gcc/x86_64-linux-gnu/9/include/syslimits.h \
-  /usr/lib/gcc/x86_64-linux-gnu/9/include/xmmintrin.h
+  /usr/lib/gcc/x86_64-linux-gnu/9/include/xmmintrin.h \
+  /usr/local/include/librealsense2/h/rs_config.h \
+  /usr/local/include/librealsense2/h/rs_context.h \
+  /usr/local/include/librealsense2/h/rs_device.h \
+  /usr/local/include/librealsense2/h/rs_frame.h \
+  /usr/local/include/librealsense2/h/rs_option.h \
+  /usr/local/include/librealsense2/h/rs_pipeline.h \
+  /usr/local/include/librealsense2/h/rs_processing.h \
+  /usr/local/include/librealsense2/h/rs_record_playback.h \
+  /usr/local/include/librealsense2/h/rs_sensor.h \
+  /usr/local/include/librealsense2/h/rs_types.h \
+  /usr/local/include/librealsense2/hpp/rs_context.hpp \
+  /usr/local/include/librealsense2/hpp/rs_device.hpp \
+  /usr/local/include/librealsense2/hpp/rs_frame.hpp \
+  /usr/local/include/librealsense2/hpp/rs_options.hpp \
+  /usr/local/include/librealsense2/hpp/rs_pipeline.hpp \
+  /usr/local/include/librealsense2/hpp/rs_processing.hpp \
+  /usr/local/include/librealsense2/hpp/rs_record_playback.hpp \
+  /usr/local/include/librealsense2/hpp/rs_sensor.hpp \
+  /usr/local/include/librealsense2/hpp/rs_types.hpp \
+  /usr/local/include/librealsense2/rs.h \
+  /usr/local/include/librealsense2/rs.hpp \
+  /usr/local/include/librealsense2/rsutil.h
 
+
+/usr/local/include/librealsense2/rs.hpp:
+
+/usr/local/include/librealsense2/rs.h:
+
+/usr/local/include/librealsense2/hpp/rs_types.hpp:
+
+/usr/local/include/librealsense2/hpp/rs_processing.hpp:
+
+/usr/local/include/librealsense2/hpp/rs_pipeline.hpp:
+
+/usr/local/include/librealsense2/hpp/rs_context.hpp:
+
+/usr/local/include/librealsense2/h/rs_sensor.h:
+
+/usr/local/include/librealsense2/h/rs_processing.h:
+
+/usr/local/include/librealsense2/h/rs_pipeline.h:
+
+/usr/local/include/librealsense2/h/rs_option.h:
+
+/usr/local/include/librealsense2/h/rs_frame.h:
+
+/usr/local/include/librealsense2/h/rs_config.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h:
 
@@ -935,6 +981,8 @@ CMakeFiles/camera_node.dir/src/camera_node.cpp.o: /home/wl/Documents/detector/sr
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
 /usr/include/x86_64-linux-gnu/bits/signal_ext.h:
+
+/usr/local/include/librealsense2/h/rs_context.h:
 
 /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
 
@@ -1061,6 +1109,8 @@ CMakeFiles/camera_node.dir/src/camera_node.cpp.o: /home/wl/Documents/detector/sr
 /usr/include/opencv4/opencv2/objdetect.hpp:
 
 /usr/include/opencv4/opencv2/ml/ml.inl.hpp:
+
+/usr/local/include/librealsense2/hpp/rs_record_playback.hpp:
 
 /usr/include/opencv4/opencv2/ml.hpp:
 
@@ -1282,6 +1332,8 @@ CMakeFiles/camera_node.dir/src/camera_node.cpp.o: /home/wl/Documents/detector/sr
 
 /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:
 
+/usr/local/include/librealsense2/hpp/rs_frame.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h:
 
 /usr/include/opencv4/opencv2/flann/allocator.h:
@@ -1494,6 +1546,8 @@ CMakeFiles/camera_node.dir/src/camera_node.cpp.o: /home/wl/Documents/detector/sr
 
 /opt/ros/foxy/include/rcl/guard_condition.h:
 
+/usr/local/include/librealsense2/h/rs_record_playback.h:
+
 /opt/ros/foxy/include/rclcpp/subscription_factory.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
@@ -1503,6 +1557,8 @@ CMakeFiles/camera_node.dir/src/camera_node.cpp.o: /home/wl/Documents/detector/sr
 /opt/ros/foxy/include/rclcpp/timer.hpp:
 
 /usr/include/c++/9/array:
+
+/usr/local/include/librealsense2/hpp/rs_device.hpp:
 
 /opt/ros/foxy/include/rcl/event.h:
 
@@ -1585,6 +1641,8 @@ CMakeFiles/camera_node.dir/src/camera_node.cpp.o: /home/wl/Documents/detector/sr
 /usr/include/c++/9/new:
 
 /opt/ros/foxy/include/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp:
+
+/usr/local/include/librealsense2/hpp/rs_options.hpp:
 
 /opt/ros/foxy/include/rosidl_runtime_c/message_initialization.h:
 
@@ -1796,6 +1854,8 @@ CMakeFiles/camera_node.dir/src/camera_node.cpp.o: /home/wl/Documents/detector/sr
 
 /usr/include/opencv4/opencv2/core/affine.hpp:
 
+/usr/local/include/librealsense2/rsutil.h:
+
 /opt/ros/foxy/include/rcl_interfaces/srv/list_parameters.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
@@ -1825,6 +1885,8 @@ CMakeFiles/camera_node.dir/src/camera_node.cpp.o: /home/wl/Documents/detector/sr
 /opt/ros/foxy/include/rclcpp/subscription_wait_set_mask.hpp:
 
 /opt/ros/foxy/include/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:
+
+/usr/local/include/librealsense2/hpp/rs_sensor.hpp:
 
 /opt/ros/foxy/include/rcl_interfaces/msg/set_parameters_result.hpp:
 
@@ -2220,6 +2282,8 @@ CMakeFiles/camera_node.dir/src/camera_node.cpp.o: /home/wl/Documents/detector/sr
 
 /usr/include/c++/9/bits/stl_iterator_base_funcs.h:
 
+/usr/local/include/librealsense2/h/rs_types.h:
+
 /usr/include/c++/9/bits/sstream.tcc:
 
 /opt/ros/foxy/include/rcl_interfaces/srv/detail/set_parameters__type_support.hpp:
@@ -2363,6 +2427,8 @@ CMakeFiles/camera_node.dir/src/camera_node.cpp.o: /home/wl/Documents/detector/sr
 /opt/ros/foxy/include/sensor_msgs/msg/detail/region_of_interest__traits.hpp:
 
 /usr/include/c++/9/string:
+
+/usr/local/include/librealsense2/h/rs_device.h:
 
 /opt/ros/foxy/include/libstatistics_collector/topic_statistics_collector/received_message_period.hpp:
 

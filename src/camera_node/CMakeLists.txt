@@ -22,6 +22,7 @@ find_package(sensor_msgs REQUIRED)
 find_package(cv_bridge REQUIRED)
 find_package(OpenCV REQUIRED)
 find_package(yaml-cpp REQUIRED)
+find_package(realsense2 REQUIRED)
 find_package(image_transport REQUIRED)  # 添加 image_transport
 
 
@@ -38,10 +39,15 @@ endif()
 
 add_executable(camera_node src/camera_node.cpp)
 
-ament_target_dependencies(camera_node rclcpp sensor_msgs cv_bridge OpenCV image_transport)
+ament_target_dependencies(camera_node rclcpp sensor_msgs cv_bridge OpenCV image_transport realsense2)
 
-target_link_libraries(camera_node yaml-cpp)
+target_link_libraries(camera_node yaml-cpp ${realsense2_LIBRARY})
 
+# 包含头文件路径
+target_include_directories(camera_node
+  PRIVATE
+  ${OpenCV_INCLUDE_DIRS}
+  )
 install(TARGETS
   camera_node
   DESTINATION lib/${PROJECT_NAME}

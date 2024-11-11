@@ -5,4 +5,5 @@ camera_config_path: /home/wl/Documents/detector/src/camera_node/config/camera_pa
 pub_time_interval: 25
 frame_width: 640
 frame_height: 480
-camera_fps: 40
+# 如果是realSense深度相机只支持30帧率
+camera_fps: 30

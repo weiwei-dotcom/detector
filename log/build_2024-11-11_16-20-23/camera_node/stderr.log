@@ -1,0 +1,4 @@
+[01m[K/home/wl/Documents/detector/src/camera_node/src/camera_node.cpp:[m[K In constructor ‘[01m[KCameraNode::CameraNode()[m[K’:
+[01m[K/home/wl/Documents/detector/src/camera_node/src/camera_node.cpp:31:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktempint[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   31 |         int [01;35m[Ktempint[m[K = 10;
+      |             [01;35m[K^~~~~~~[m[K
