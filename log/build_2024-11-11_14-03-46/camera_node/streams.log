@@ -1,0 +1,25 @@
+[0.014s] Invoking command in '/home/wl/Documents/detector/build/camera_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wl/Documents/detector/install/yolo_detector:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(yolov10) /home/wl/anaconda3/envs/yolov10/bin/cmake --build /home/wl/Documents/detector/build/camera_node -- -j16 -l16
+[0.073s] [ 50%] [32mBuilding CXX object CMakeFiles/camera_node.dir/src/camera_node.cpp.o[0m
+[2.831s] [100%] [32m[1mLinking CXX executable camera_node[0m
+[3.151s] [100%] Built target camera_node
+[3.163s] Invoked command in '/home/wl/Documents/detector/build/camera_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wl/Documents/detector/install/yolo_detector:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(yolov10) /home/wl/anaconda3/envs/yolov10/bin/cmake --build /home/wl/Documents/detector/build/camera_node -- -j16 -l16
+[3.270s] Invoking command in '/home/wl/Documents/detector/build/camera_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wl/Documents/detector/install/yolo_detector:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(yolov10) /home/wl/anaconda3/envs/yolov10/bin/cmake --install /home/wl/Documents/detector/build/camera_node
+[3.312s] -- Install configuration: ""
+[3.312s] -- Installing: /home/wl/Documents/detector/install/camera_node/lib/camera_node/camera_node
+[3.313s] -- Set non-toolchain portion of runtime path of "/home/wl/Documents/detector/install/camera_node/lib/camera_node/camera_node" to ""
+[3.313s] -- Up-to-date: /home/wl/Documents/detector/install/camera_node/share/ament_index/resource_index/package_run_dependencies/camera_node
+[3.313s] -- Up-to-date: /home/wl/Documents/detector/install/camera_node/share/ament_index/resource_index/parent_prefix_path/camera_node
+[3.313s] -- Up-to-date: /home/wl/Documents/detector/install/camera_node/share/camera_node/environment/ament_prefix_path.sh
+[3.313s] -- Up-to-date: /home/wl/Documents/detector/install/camera_node/share/camera_node/environment/ament_prefix_path.dsv
+[3.313s] -- Up-to-date: /home/wl/Documents/detector/install/camera_node/share/camera_node/environment/path.sh
+[3.313s] -- Up-to-date: /home/wl/Documents/detector/install/camera_node/share/camera_node/environment/path.dsv
+[3.313s] -- Up-to-date: /home/wl/Documents/detector/install/camera_node/share/camera_node/local_setup.bash
+[3.313s] -- Up-to-date: /home/wl/Documents/detector/install/camera_node/share/camera_node/local_setup.sh
+[3.313s] -- Up-to-date: /home/wl/Documents/detector/install/camera_node/share/camera_node/local_setup.zsh
+[3.313s] -- Up-to-date: /home/wl/Documents/detector/install/camera_node/share/camera_node/local_setup.dsv
+[3.313s] -- Installing: /home/wl/Documents/detector/install/camera_node/share/camera_node/package.dsv
+[3.314s] -- Up-to-date: /home/wl/Documents/detector/install/camera_node/share/ament_index/resource_index/packages/camera_node
+[3.314s] -- Up-to-date: /home/wl/Documents/detector/install/camera_node/share/camera_node/cmake/camera_nodeConfig.cmake
+[3.314s] -- Up-to-date: /home/wl/Documents/detector/install/camera_node/share/camera_node/cmake/camera_nodeConfig-version.cmake
+[3.314s] -- Up-to-date: /home/wl/Documents/detector/install/camera_node/share/camera_node/package.xml
+[3.320s] Invoked command in '/home/wl/Documents/detector/build/camera_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wl/Documents/detector/install/yolo_detector:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(yolov10) /home/wl/anaconda3/envs/yolov10/bin/cmake --install /home/wl/Documents/detector/build/camera_node

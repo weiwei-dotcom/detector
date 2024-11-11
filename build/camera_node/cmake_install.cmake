@@ -1,8 +1,8 @@
-# Install script for directory: /home/ww/Documents/detector/src/camera_node
+# Install script for directory: /home/wl/Documents/detector/src/camera_node
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ww/Documents/detector/install/camera_node")
+  set(CMAKE_INSTALL_PREFIX "/home/wl/Documents/detector/install/camera_node")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -37,14 +37,19 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+# Set path to fallback-tool for dependency-resolution.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/camera_node/camera_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/camera_node/camera_node")
     file(RPATH_CHECK
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/camera_node/camera_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/camera_node" TYPE EXECUTABLE FILES "/home/ww/Documents/detector/build/camera_node/camera_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/camera_node" TYPE EXECUTABLE FILES "/home/wl/Documents/detector/build/camera_node/camera_node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/camera_node/camera_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/camera_node/camera_node")
     file(RPATH_CHANGE
@@ -57,72 +62,84 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   endif()
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/ww/Documents/detector/build/camera_node/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/camera_node")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  include("/home/wl/Documents/detector/build/camera_node/CMakeFiles/camera_node.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/ww/Documents/detector/build/camera_node/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/camera_node")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/wl/Documents/detector/build/camera_node/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/camera_node")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/wl/Documents/detector/build/camera_node/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/camera_node")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera_node/environment" TYPE FILE FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera_node/environment" TYPE FILE FILES "/home/ww/Documents/detector/build/camera_node/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera_node/environment" TYPE FILE FILES "/home/wl/Documents/detector/build/camera_node/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera_node/environment" TYPE FILE FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera_node/environment" TYPE FILE FILES "/home/ww/Documents/detector/build/camera_node/ament_cmake_environment_hooks/path.dsv")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera_node/environment" TYPE FILE FILES "/home/wl/Documents/detector/build/camera_node/ament_cmake_environment_hooks/path.dsv")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera_node" TYPE FILE FILES "/home/ww/Documents/detector/build/camera_node/ament_cmake_environment_hooks/local_setup.bash")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera_node" TYPE FILE FILES "/home/wl/Documents/detector/build/camera_node/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera_node" TYPE FILE FILES "/home/ww/Documents/detector/build/camera_node/ament_cmake_environment_hooks/local_setup.sh")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera_node" TYPE FILE FILES "/home/wl/Documents/detector/build/camera_node/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera_node" TYPE FILE FILES "/home/ww/Documents/detector/build/camera_node/ament_cmake_environment_hooks/local_setup.zsh")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera_node" TYPE FILE FILES "/home/wl/Documents/detector/build/camera_node/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera_node" TYPE FILE FILES "/home/ww/Documents/detector/build/camera_node/ament_cmake_environment_hooks/local_setup.dsv")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera_node" TYPE FILE FILES "/home/wl/Documents/detector/build/camera_node/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera_node" TYPE FILE FILES "/home/ww/Documents/detector/build/camera_node/ament_cmake_environment_hooks/package.dsv")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera_node" TYPE FILE FILES "/home/wl/Documents/detector/build/camera_node/ament_cmake_environment_hooks/package.dsv")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/ww/Documents/detector/build/camera_node/ament_cmake_index/share/ament_index/resource_index/packages/camera_node")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/wl/Documents/detector/build/camera_node/ament_cmake_index/share/ament_index/resource_index/packages/camera_node")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera_node/cmake" TYPE FILE FILES
-    "/home/ww/Documents/detector/build/camera_node/ament_cmake_core/camera_nodeConfig.cmake"
-    "/home/ww/Documents/detector/build/camera_node/ament_cmake_core/camera_nodeConfig-version.cmake"
+    "/home/wl/Documents/detector/build/camera_node/ament_cmake_core/camera_nodeConfig.cmake"
+    "/home/wl/Documents/detector/build/camera_node/ament_cmake_core/camera_nodeConfig-version.cmake"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera_node" TYPE FILE FILES "/home/ww/Documents/detector/src/camera_node/package.xml")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/camera_node" TYPE FILE FILES "/home/wl/Documents/detector/src/camera_node/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
-  set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
+  if(CMAKE_INSTALL_COMPONENT MATCHES "^[a-zA-Z0-9_.+-]+$")
+    set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
+  else()
+    string(MD5 CMAKE_INST_COMP_HASH "${CMAKE_INSTALL_COMPONENT}")
+    set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INST_COMP_HASH}.txt")
+    unset(CMAKE_INST_COMP_HASH)
+  endif()
 else()
   set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 endif()
 
-string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ww/Documents/detector/build/camera_node/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/wl/Documents/detector/build/camera_node/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
+endif()

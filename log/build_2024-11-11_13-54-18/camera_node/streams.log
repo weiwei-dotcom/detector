@@ -1,0 +1,6 @@
+[0.018s] Invoking command in '/home/wl/Documents/detector/build/camera_node': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(yolov10) /home/wl/anaconda3/envs/yolov10/bin/cmake --build /home/wl/Documents/detector/build/camera_node -- -j16 -l16
+[0.084s] [0mCMake Error: The current CMakeCache.txt directory /home/wl/Documents/detector/build/camera_node/CMakeCache.txt is different than the directory /home/ww/Documents/detector/build/camera_node where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[0.127s] CMake Error: The source directory "/home/ww/Documents/detector/src/camera_node" does not exist.
+[0.127s] Specify --help for usage, or press the help button on the CMake GUI.
+[0.129s] make: *** [Makefile:266: cmake_check_build_system] Error 1
+[0.185s] Invoked command in '/home/wl/Documents/detector/build/camera_node' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(yolov10) /home/wl/anaconda3/envs/yolov10/bin/cmake --build /home/wl/Documents/detector/build/camera_node -- -j16 -l16

@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/camera_node.dir/src/camera_node.cpp.o"
+  "CMakeFiles/camera_node.dir/src/camera_node.cpp.o.d"
   "camera_node"
   "camera_node.pdb"
 )

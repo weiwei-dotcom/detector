@@ -13,7 +13,7 @@ public:
     CameraNode() : Node("camera_node")
     {
         // 读取相机参数
-        _config = LoadConfig("/home/ww/Documents/detector/src/camera_node/config/config.yaml");
+        _config = LoadConfig("/home/wl/Documents/detector/src/camera_node/config/config.yaml");
         
         _camera_params = LoadCameraParameters(_config._camera_config_path);
 
@@ -100,19 +100,17 @@ private:
             return;
         }
         
-        cv::Mat frame_undistort;
-        frame.copyTo(frame_undistort);
         if (_config._undistort)
         {
             std::cout << "image_undistorted" << std::endl;
-            cv::undistort(frame, frame_undistort, _camera_params._camera_matrix, _camera_params._dist_coeffs);
+            cv::undistort(frame, frame, _camera_params._camera_matrix, _camera_params._dist_coeffs);
         }
 
         // 将OpenCV图像转换为ROS消息
         std_msgs::msg::Header header;
         header.frame_id = "camera";
         header.stamp = this->now();
-        auto msg = cv_bridge::CvImage(std_msgs::msg::Header(), "bgr8", frame_undistort).toImageMsg();
+        auto msg = cv_bridge::CvImage(std_msgs::msg::Header(), "bgr8", frame).toImageMsg();
         
         // 发布图像消息
         image_publisher_.publish(msg);
