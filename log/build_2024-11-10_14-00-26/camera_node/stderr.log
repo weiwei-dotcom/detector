@@ -1,7 +1,0 @@
-[01m[K/home/ww/Documents/detector/src/camera_node/src/camera_node.cpp:[m[K In member function ‘[01m[Kbool CameraNode::loadCameraParameters()[m[K’:
-[01m[K/home/ww/Documents/detector/src/camera_node/src/camera_node.cpp:39:38:[m[K [01;31m[Kerror: [m[Kunable to find string literal operator ‘[01m[Koperator""distort[m[K’ with ‘[01m[Kconst char [11][m[K’, ‘[01m[Klong unsigned int[m[K’ arguments
-   39 |         std::cout << "config["distort[01;31m[K"]: "[m[K << config["distort"] << std::endl;
-      |                                      [01;31m[K^~~~~[m[K
-make[2]: *** [CMakeFiles/camera_node.dir/build.make:63: CMakeFiles/camera_node.dir/src/camera_node.cpp.o] Error 1
-make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/camera_node.dir/all] Error 2
-make: *** [Makefile:141: all] Error 2

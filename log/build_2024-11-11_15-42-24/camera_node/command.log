@@ -1,2 +1,0 @@
-Invoking command in '/home/wl/Documents/detector/build/camera_node': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(RL) /usr/bin/cmake --build /home/wl/Documents/detector/build/camera_node -- -j16 -l16
-Invoked command in '/home/wl/Documents/detector/build/camera_node' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy CONDA_PROMPT_MODIFIER=(RL) /usr/bin/cmake --build /home/wl/Documents/detector/build/camera_node -- -j16 -l16
