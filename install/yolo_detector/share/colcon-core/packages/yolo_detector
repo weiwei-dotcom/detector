@@ -1,1 +1,1 @@
-cv_bridge:opencv:rclpy:sensor_msgs:yolov10
+cv_bridge:fdsf:opencv:rclpy:sensor_msgs:ultralytics

@@ -29,17 +29,6 @@ public:
         // 开启realsense相机管道
         p.start(rs_cfg);
 
-        // // 打开USB摄像头
-        // cap_.open(_config._device_port, cv::CAP_V4L2);
-        // cap_.set(cv::CAP_PROP_FRAME_WIDTH, _config._frame_width);  //设置捕获视频的宽度
-        // cap_.set(cv::CAP_PROP_FRAME_HEIGHT, _config._frame_height);  //设置捕获视频的高度
-        // cap_.set(cv::CAP_PROP_FPS, _config._camera_fps);
-        // if (!cap_.isOpened())
-        // {
-        //     RCLCPP_ERROR(this->get_logger(), "Failed to open the camera!");
-        //     rclcpp::shutdown();
-        // }
-
         // 定时器，用于定时抓取和发布图像
         timer_ = this->create_wall_timer(
             std::chrono::milliseconds(_config._pub_time_interval), // 每30ms获取一帧图像

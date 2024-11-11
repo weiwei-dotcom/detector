@@ -2,14 +2,6 @@ import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge
-# my_project/main.py
-# import sys
-# from pathlib import Path
-
-# # 添加 yolov10 源代码目录到 sys.path
-# sys.path.append(str(Path("/home/ww/Documents/yolov10/ultralytics/models").resolve()))
-
-# 导入 YOLOv10 类并创建对象
 from ultralytics import YOLOv10
 import cv2
 
