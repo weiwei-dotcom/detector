@@ -33,6 +33,7 @@ public:
         timer_ = this->create_wall_timer(
             std::chrono::milliseconds(_config._pub_time_interval), // 每30ms获取一帧图像
             std::bind(&CameraNode::captureAndPublish, this));
+        RCLCPP_INFO(this->get_logger(), "camera_node launch success");
     }
 
 private:
