@@ -1,9 +1,8 @@
-
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge
-from ultralytics import YOLOv10
+from ultralytics import YOLO
 import random
 import yaml
 import cv2
@@ -16,7 +15,7 @@ class YoloDetector(Node):
         with open('/home/wl/Documents/detector/src/camera_node/config/config.yaml', 'r', encoding='utf-8') as file:
             self.config = yaml.safe_load(file)
         super().__init__('yolo_detector')
-        self.model = YOLOv10(self.config['model_path'])
+        self.model = YOLO(self.config['model_path'])
 
         self.bridge = CvBridge()
         self.colors = [[]]
