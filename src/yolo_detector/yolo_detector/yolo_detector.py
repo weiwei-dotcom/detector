@@ -16,10 +16,14 @@ class YoloDetector(Node):
         super().__init__('yolo_detector')
         self.model = YOLO('/home/wl/Documents/yolov10/yolov10n.pt')
         self.bridge = CvBridge()
+        self.colors = [[]]
+        # 随机产生颜色数组
+        for color_index in range(1000):
+            self.colors.append([random.randint(0,255), random.randint(0,255), random.randint(0,255)])
         self.image_subscriber = self.create_subscription(Image, 'image', self.image_callback, 10)
         with open('/home/wl/Documents/detector/src/camera_node/config/config.yaml', 'r', encoding='utf-8') as file:
             self.config = yaml.safe_load(file)
-        get_logger().info("yolo_node launch success ! ! !")
+        self.get_logger().info("yolo_node launch success ! ! !")
         
     def image_callback(self, img_msg):
         cv_image = self.bridge.imgmsg_to_cv2(img_msg, desired_encoding='bgr8')
@@ -29,20 +33,21 @@ class YoloDetector(Node):
                 cv2.rectangle(cv_image, 
                               (int(box.xyxy[0][0]), int(box.xyxy[0][1])), 
                               (int(box.xyxy[0][2]), int(box.xyxy[0][3])), 
-                              (random.randint(0,255), random.randint(0,255), random.randint(0,255)), self.config['box_thickness'])
+                              (self.colors[int(box.cls[0]+1)][0],self.colors[int(box.cls[0]+1)][1],self.colors[int(box.cls[0]+1)][2]), 
+                              self.config['box_thickness'])
                 cv2.putText(cv_image,
                             f"{result.names[int(box.cls[0])]}",
                             (int(box.xyxy[0][0]), int(box.xyxy[0][1]) - 10),
                             cv2.FONT_HERSHEY_PLAIN,
                             self.config['font_size'],
-                            (random.randint(0,255), random.randint(0,255), random.randint(0,255)),
+                            (self.colors[int(box.cls[0]+1)][0],self.colors[int(box.cls[0]+1)][1],self.colors[int(box.cls[0]+1)][2]),
                             self.config['text_thickness'])
                 cv2.putText(cv_image,
                             f"({int(box.xyxy[0][0])}, {int(box.xyxy[0][1])})",
                             (int(box.xyxy[0][0]), int(box.xyxy[0][1]) + 22),
                             cv2.FONT_HERSHEY_PLAIN,
                             self.config['font_size'],
-                            (random.randint(0,255), random.randint(0,255), random.randint(0,255)),
+                            (self.colors[int(box.cls[0]+1)][0],self.colors[int(box.cls[0]+1)][1],self.colors[int(box.cls[0]+1)][2]),
                             self.config['text_thickness'])
         cv2.imshow('YOLOv10 Object Detection', cv_image)
         cv2.waitKey(self.config['camera_fps'])
