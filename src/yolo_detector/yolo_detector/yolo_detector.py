@@ -1,9 +1,9 @@
-from multiprocessing import get_logger
+
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge
-from ultralytics import YOLO
+from ultralytics import YOLOv10
 import random
 import yaml
 import cv2
@@ -13,16 +13,17 @@ class YoloDetector(Node):
     Class to detect objects using YOLO.
     """
     def __init__(self):
+        with open('/home/wl/Documents/detector/src/camera_node/config/config.yaml', 'r', encoding='utf-8') as file:
+            self.config = yaml.safe_load(file)
         super().__init__('yolo_detector')
-        self.model = YOLO('/home/wl/Documents/yolov10/yolov10n.pt')
+        self.model = YOLOv10(self.config['model_path'])
+
         self.bridge = CvBridge()
         self.colors = [[]]
         # 随机产生颜色数组
         for color_index in range(1000):
             self.colors.append([random.randint(0,255), random.randint(0,255), random.randint(0,255)])
         self.image_subscriber = self.create_subscription(Image, 'image', self.image_callback, 10)
-        with open('/home/wl/Documents/detector/src/camera_node/config/config.yaml', 'r', encoding='utf-8') as file:
-            self.config = yaml.safe_load(file)
         self.get_logger().info("yolo_node launch success ! ! !")
         
     def image_callback(self, img_msg):

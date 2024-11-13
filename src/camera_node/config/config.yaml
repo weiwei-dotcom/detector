@@ -7,7 +7,8 @@ frame_width: 640
 frame_height: 480
 # 如果是realSense深度相机只支持30帧率
 camera_fps: 30
-confidence: 0.3
+confidence: 0.1
 text_thickness: 2
 box_thickness: 2
 font_size: 2
+model_path: /home/wl/Documents/yolov10/runs/detect/train13/weights/best.pt
