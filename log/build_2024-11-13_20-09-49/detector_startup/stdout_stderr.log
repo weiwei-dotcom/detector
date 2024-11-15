@@ -1,0 +1,20 @@
+-- Install configuration: ""
+-- Installing: /home/wl/Documents/detector/install/detector_startup/share/detector_startup/launch
+-- Installing: /home/wl/Documents/detector/install/detector_startup/share/detector_startup/launch/camera.launch.py
+-- Installing: /home/wl/Documents/detector/install/detector_startup/share/detector_startup/launch/yolo.launch.py
+-- Installing: /home/wl/Documents/detector/install/detector_startup/share/detector_startup/launch/detector.launch.py
+-- Installing: /home/wl/Documents/detector/install/detector_startup/share/ament_index/resource_index/package_run_dependencies/detector_startup
+-- Installing: /home/wl/Documents/detector/install/detector_startup/share/ament_index/resource_index/parent_prefix_path/detector_startup
+-- Installing: /home/wl/Documents/detector/install/detector_startup/share/detector_startup/environment/ament_prefix_path.sh
+-- Installing: /home/wl/Documents/detector/install/detector_startup/share/detector_startup/environment/ament_prefix_path.dsv
+-- Installing: /home/wl/Documents/detector/install/detector_startup/share/detector_startup/environment/path.sh
+-- Installing: /home/wl/Documents/detector/install/detector_startup/share/detector_startup/environment/path.dsv
+-- Installing: /home/wl/Documents/detector/install/detector_startup/share/detector_startup/local_setup.bash
+-- Installing: /home/wl/Documents/detector/install/detector_startup/share/detector_startup/local_setup.sh
+-- Installing: /home/wl/Documents/detector/install/detector_startup/share/detector_startup/local_setup.zsh
+-- Installing: /home/wl/Documents/detector/install/detector_startup/share/detector_startup/local_setup.dsv
+-- Installing: /home/wl/Documents/detector/install/detector_startup/share/detector_startup/package.dsv
+-- Installing: /home/wl/Documents/detector/install/detector_startup/share/ament_index/resource_index/packages/detector_startup
+-- Installing: /home/wl/Documents/detector/install/detector_startup/share/detector_startup/cmake/detector_startupConfig.cmake
+-- Installing: /home/wl/Documents/detector/install/detector_startup/share/detector_startup/cmake/detector_startupConfig-version.cmake
+-- Installing: /home/wl/Documents/detector/install/detector_startup/share/detector_startup/package.xml

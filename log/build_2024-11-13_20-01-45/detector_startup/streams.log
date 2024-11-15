@@ -1,0 +1,1 @@
+[0.016s] Invoking command in '/home/wl/Documents/detector/build/detector_startup': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/wl/Documents/detector/build/detector_startup -- -j16 -l16

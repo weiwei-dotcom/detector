@@ -1,0 +1,9 @@
+/home/wl/Documents/detector/build/detector_startup/CMakeFiles/uninstall.dir
+/home/wl/Documents/detector/build/detector_startup/CMakeFiles/detector_startup_uninstall.dir
+/home/wl/Documents/detector/build/detector_startup/CMakeFiles/test.dir
+/home/wl/Documents/detector/build/detector_startup/CMakeFiles/edit_cache.dir
+/home/wl/Documents/detector/build/detector_startup/CMakeFiles/rebuild_cache.dir
+/home/wl/Documents/detector/build/detector_startup/CMakeFiles/list_install_components.dir
+/home/wl/Documents/detector/build/detector_startup/CMakeFiles/install.dir
+/home/wl/Documents/detector/build/detector_startup/CMakeFiles/install/local.dir
+/home/wl/Documents/detector/build/detector_startup/CMakeFiles/install/strip.dir

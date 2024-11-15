@@ -1,6 +1,6 @@
 
 undistort: false
-device_port: /dev/video2
+device_port: /dev/video0
 camera_config_path: /home/wl/Documents/detector/src/camera_node/config/camera_params.yaml
 pub_time_interval: 25
 frame_width: 640

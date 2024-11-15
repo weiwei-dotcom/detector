@@ -10,7 +10,7 @@ from cv_bridge import CvBridge
 # sys.path.append(str(Path("/home/ww/Documents/yolov10/ultralytics/models").resolve()))
 
 # 导入 YOLOv10 类并创建对象
-from ultralytics import YOLOv10
+from ultralytics import YOLO
 import cv2
 
 class YoloDetector(Node):
@@ -19,7 +19,7 @@ class YoloDetector(Node):
     """
     def __init__(self):
         super().__init__('yolo_detector')
-        self.model = YOLOv10('yolov10n.pt')
+        self.model = YOLO('/home/wl/Documents/yolov10/yolov10n.pt')
         self.bridge = CvBridge()
         self.image_subscriber = self.create_subscription(Image, 'image', self.image_callback, 10)
         
@@ -28,9 +28,10 @@ class YoloDetector(Node):
         results = self.model(cv_image)
         annotated_frame = results[0].plot() 
         cv2.imshow('YOLOv10 Object Detection', annotated_frame)
+        cv2.waitKey(25)
         
-if __name__ == '__main__':
-    rclpy.init()
+def main(args=None):
+    rclpy.init(args=args)
     yolo_detector = YoloDetector()
     rclpy.spin(yolo_detector)
     rclpy.shutdown()

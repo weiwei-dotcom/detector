@@ -1,0 +1,1 @@
+Invoking command in '/home/wl/Documents/detector/build/detector_startup': CMAKE_PREFIX_PATH=/opt/ros/foxy /home/wl/.local/bin/cmake /home/wl/Documents/detector/src/detector_startup -DCMAKE_INSTALL_PREFIX=/home/wl/Documents/detector/install/detector_startup

@@ -1,0 +1,22 @@
+[0.014s] Invoking command in '/home/wl/Documents/detector/build/camera_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wl/Documents/detector/install/yolo_detector:/opt/ros/foxy /home/wl/.local/bin/cmake --build /home/wl/Documents/detector/build/camera_node -- -j16 -l16
+[0.077s] [100%] Built target camera_node
+[0.215s] Invoked command in '/home/wl/Documents/detector/build/camera_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wl/Documents/detector/install/yolo_detector:/opt/ros/foxy /home/wl/.local/bin/cmake --build /home/wl/Documents/detector/build/camera_node -- -j16 -l16
+[0.315s] Invoking command in '/home/wl/Documents/detector/build/camera_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wl/Documents/detector/install/yolo_detector:/opt/ros/foxy /home/wl/.local/bin/cmake --install /home/wl/Documents/detector/build/camera_node
+[0.359s] -- Install configuration: ""
+[0.359s] -- Up-to-date: /home/wl/Documents/detector/install/camera_node/lib/camera_node/camera_node
+[0.360s] -- Up-to-date: /home/wl/Documents/detector/install/camera_node/share/ament_index/resource_index/package_run_dependencies/camera_node
+[0.360s] -- Up-to-date: /home/wl/Documents/detector/install/camera_node/share/ament_index/resource_index/parent_prefix_path/camera_node
+[0.360s] -- Up-to-date: /home/wl/Documents/detector/install/camera_node/share/camera_node/environment/ament_prefix_path.sh
+[0.360s] -- Up-to-date: /home/wl/Documents/detector/install/camera_node/share/camera_node/environment/ament_prefix_path.dsv
+[0.360s] -- Up-to-date: /home/wl/Documents/detector/install/camera_node/share/camera_node/environment/path.sh
+[0.360s] -- Up-to-date: /home/wl/Documents/detector/install/camera_node/share/camera_node/environment/path.dsv
+[0.360s] -- Up-to-date: /home/wl/Documents/detector/install/camera_node/share/camera_node/local_setup.bash
+[0.360s] -- Up-to-date: /home/wl/Documents/detector/install/camera_node/share/camera_node/local_setup.sh
+[0.360s] -- Up-to-date: /home/wl/Documents/detector/install/camera_node/share/camera_node/local_setup.zsh
+[0.360s] -- Up-to-date: /home/wl/Documents/detector/install/camera_node/share/camera_node/local_setup.dsv
+[0.360s] -- Installing: /home/wl/Documents/detector/install/camera_node/share/camera_node/package.dsv
+[0.360s] -- Up-to-date: /home/wl/Documents/detector/install/camera_node/share/ament_index/resource_index/packages/camera_node
+[0.361s] -- Up-to-date: /home/wl/Documents/detector/install/camera_node/share/camera_node/cmake/camera_nodeConfig.cmake
+[0.361s] -- Up-to-date: /home/wl/Documents/detector/install/camera_node/share/camera_node/cmake/camera_nodeConfig-version.cmake
+[0.361s] -- Up-to-date: /home/wl/Documents/detector/install/camera_node/share/camera_node/package.xml
+[0.362s] Invoked command in '/home/wl/Documents/detector/build/camera_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wl/Documents/detector/install/yolo_detector:/opt/ros/foxy /home/wl/.local/bin/cmake --install /home/wl/Documents/detector/build/camera_node
