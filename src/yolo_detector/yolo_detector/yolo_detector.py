@@ -43,7 +43,7 @@ class YoloDetector(Node):
                             (self.colors[int(box.cls[0]+1)][0],self.colors[int(box.cls[0]+1)][1],self.colors[int(box.cls[0]+1)][2]),
                             self.config['text_thickness'])
                 cv2.putText(cv_image,
-                            f"({int(box.xyxy[0][0])}, {int(box.xyxy[0][1])})",
+                            f"({int(box.xyxy[0][0]+int(box.xyxy[0][2]*0.5))}, {int(box.xyxy[0][1]+int(box.xyxy[0][3]*0.5))})",
                             (int(box.xyxy[0][0]), int(box.xyxy[0][1]) + 22),
                             cv2.FONT_HERSHEY_PLAIN,
                             self.config['font_size'],
